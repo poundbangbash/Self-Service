@@ -2,22 +2,22 @@
 watchFolderPath="/Library/Management/Triggers/TimeZone"
 
 #On run, list the contents of the directory and use that to pick which timezone to change to
-setToTimeZone=`ls $watchFolderPath`
+setToTimeZone=`ls $watchFolderPath | grep -v .filewavefile | grep -v .DS_Store`
 
 #Set the appropriate time zone
-if [ $setToTimeZone = "eastern" ]
+if [ "$setToTimeZone" = "eastern" ]
 then
     date
     systemsetup -settimezone America/New_York
-elif [ $setToTimeZone = "central" ]
+elif [ "$setToTimeZone" = "central" ]
 then
     date
     systemsetup -settimezone America/Chicago
-elif [ $setToTimeZone = "mountain" ]
+elif [ "$setToTimeZone" = "mountain" ]
 then
     date
     systemsetup -settimezone America/Denver
-elif [ $setToTimeZone = "pacific" ]
+elif [ "$setToTimeZone" = "pacific" ]
 then
     date
     systemsetup -settimezone America/Los_Angeles
