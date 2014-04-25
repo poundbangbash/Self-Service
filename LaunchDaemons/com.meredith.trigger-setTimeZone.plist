@@ -3,18 +3,16 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.DOMAIN.trigger-setMountainTZ</string>
+  <string>com.meredith.trigger-setTimeZone</string>
   <key>ProgramArguments</key>
   <array>
-    <string>systemsetup</string>
-    <string>-settimezone</string>
-    <string>America/Denver</string>
+    <string>/Library/Management/Triggers/bin/setTimeZone.sh</string>
 </array>
   <key>WatchPaths</key>
   <array>
-    <string>/Library/Management/Triggers/setMountainTZ</string>
+    <string>/Library/Management/Triggers/TimeZone/</string>
   </array>
 <key>StandardOutPath</key>
-<string>/var/log/DOMAIN/trigger-changeTimeZone.log</string>
+<string>/var/log/meredith/trigger-changeTimeZone.log</string>
 </dict>
 </plist>

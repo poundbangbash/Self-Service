@@ -63,16 +63,16 @@ then
                     then
                         if [ $tzitem = 0 ]
                         then
-                            touch /Library/Management/Triggers/setEasternTZ
+                            touch /Library/Management/Triggers/TimeZone/eastern
                         elif [ $tzitem = 1 ]
                         then
-                            touch /Library/Management/Triggers/setCentralTZ
+                            touch /Library/Management/Triggers/TimeZone/central
                         elif [ $tzitem = 2 ]
                         then
-                            touch /Library/Management/Triggers/setMountainTZ
+                            touch /Library/Management/Triggers/TimeZone/mountain
                         elif [ $tzitem = 3 ]
                         then
-                            touch /Library/Management/Triggers/setPacificTZ
+                            touch /Library/Management/Triggers/TimeZone/pacific
                         else 
                             echo "User canceled"
                         fi
