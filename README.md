@@ -19,21 +19,7 @@ Create an empty file that a LaunchDaemon watches to start the action script
 sudo touch /Library/Management/Triggers/<trigger-name>
 sudo chmod 666 /Library/Management/Triggers/<trigger-name>
 
-Create a LaunchDaemon to watch your trigger
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-  <key>Label</key>
-  <string>org.myorg.softwareupdate</string>
-  <key>ProgramArguments</key>
-  <array>
-    <string>/path/to/action-script or command</string>
-  </array>
-  <key>WatchPaths</key>
-  <array>
-    <string>/Library/Management/Triggers/<trigger-name> </string>
-  </array>
-</dict>
-</plist>
+Create a LaunchDaemon using the "WatchPaths" key to watch the trigger file.
+The ProgramArguements of the LD is what you want to happen when the trigger file gets twiddled.
+
 
