@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 # CocoaDialog executable path
 CD="/Library/Management/Triggers/cocoaDialog.app/Contents/MacOS/CocoaDialog"
 
