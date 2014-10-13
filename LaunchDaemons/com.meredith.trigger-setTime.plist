@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.DOMAIN.trigger-setTime</string>
+  <string>com.meredith.trigger-setTime</string>
   <key>ProgramArguments</key>
   <array>
     <string>/Library/Management/Triggers/bin/setTime.sh</string>
@@ -13,6 +13,6 @@
     <string>/Library/Management/Triggers/setTime</string>
   </array>
 <key>StandardOutPath</key>
-<string>/tmp/setTime.txt</string>
+<string>/var/log/meredith/trigger-setTime.txt</string>
 </dict>
 </plist>
