@@ -10,7 +10,7 @@
 </array>
   <key>WatchPaths</key>
   <array>
-    <string>/Library/Management/Triggers/clearImproperShutdownWarning</string>
+    <string>/Library/Management/Triggers/clearImproperShutdownWarning/clearImproperShutdownWarning</string>
   </array>
 <key>StandardOutPath</key>
 <string>/var/log/meredith/trigger-clearImproperShutdownWarning.txt</string>

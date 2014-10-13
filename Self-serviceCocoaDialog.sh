@@ -82,7 +82,7 @@ then
             elif [ $i = 2 ] #index 2 - Clear Improper Shutdown Warning
             then    
                     # Touch a file to trigger the Self Service script managed via a LaunchDaemon
-                    touch /Library/Management/Triggers/clearImproperShutdownWarning
+                    touch /Library/Management/Triggers/clearImproperShutdownWarning/clearImproperShutdownWarning
 : <<COMMENTBLOCK 
             elif [ $i = 3 ] #index 3
             then    
