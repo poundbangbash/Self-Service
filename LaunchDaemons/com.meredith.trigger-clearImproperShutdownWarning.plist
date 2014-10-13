@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.meredith.trigger-clearImproperShutdownWarning</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Library/Management/Triggers/bin/clearImproperShutdownWarning.sh</string>
+</array>
+  <key>WatchPaths</key>
+  <array>
+    <string>/Library/Management/Triggers/clearImproperShutdownWarning</string>
+  </array>
+<key>StandardOutPath</key>
+<string>/var/log/meredith/trigger-clearImproperShutdownWarning.txt</string>
+</dict>
+</plist>

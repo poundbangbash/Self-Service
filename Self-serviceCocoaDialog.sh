@@ -15,6 +15,7 @@ dialog=$($CD checkbox --title "Meredith Self-Service" --float \
     --items \
       "Sync Date & Time" \
       "Change Time Zone" \
+      "Clear Improper Shutdown Warning" \
     --button1 "OK" \
     --button2 "Cancel");
 
@@ -77,10 +78,12 @@ then
                             echo "User canceled"
                         fi
                     fi
-: <<COMMENTBLOCK            
-            elif [ $i = 2 ] #index 2
+           
+            elif [ $i = 2 ] #index 2 - Clear Improper Shutdown Warning
             then    
-                    echo "Performing code for option 3"
+                    # Touch a file to trigger the Self Service script managed via a LaunchDaemon
+                    touch /Library/Management/Triggers/clearImproperShutdownWarning
+: <<COMMENTBLOCK 
             elif [ $i = 3 ] #index 3
             then    
                     echo "Performing code for option 4"
